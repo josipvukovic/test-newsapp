@@ -14,6 +14,9 @@
 		86A556562176020500B8EFC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A556542176020500B8EFC6 /* LaunchScreen.storyboard */; };
 		86A556612176020500B8EFC6 /* Bojan_news_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A556602176020500B8EFC6 /* Bojan_news_appTests.swift */; };
 		86A5566C2176020500B8EFC6 /* Bojan_news_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A5566B2176020500B8EFC6 /* Bojan_news_appUITests.swift */; };
+		86A5567A2176045400B8EFC6 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A556792176045400B8EFC6 /* FeedCell.swift */; };
+		86A5567C217605DF00B8EFC6 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A5567B217605DF00B8EFC6 /* Article.swift */; };
+		86C9385B2176292600D1C712 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C9385A2176292600D1C712 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		86A556672176020500B8EFC6 /* Bojan-news appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bojan-news appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A5566B2176020500B8EFC6 /* Bojan_news_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bojan_news_appUITests.swift; sourceTree = "<group>"; };
 		86A5566D2176020500B8EFC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86A556792176045400B8EFC6 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		86A5567B217605DF00B8EFC6 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		86C9385A2176292600D1C712 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +105,13 @@
 			children = (
 				86A5564B2176020100B8EFC6 /* AppDelegate.swift */,
 				86A5564D2176020100B8EFC6 /* ViewController.swift */,
+				86C9385A2176292600D1C712 /* SecondViewController.swift */,
 				86A5564F2176020100B8EFC6 /* Main.storyboard */,
 				86A556522176020500B8EFC6 /* Assets.xcassets */,
 				86A556542176020500B8EFC6 /* LaunchScreen.storyboard */,
 				86A556572176020500B8EFC6 /* Info.plist */,
+				86A556792176045400B8EFC6 /* FeedCell.swift */,
+				86A5567B217605DF00B8EFC6 /* Article.swift */,
 			);
 			path = "Bojan-news app";
 			sourceTree = "<group>";
@@ -193,13 +202,16 @@
 				TargetAttributes = {
 					86A556472176020100B8EFC6 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					86A5565B2176020500B8EFC6 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 86A556472176020100B8EFC6;
 					};
 					86A556662176020500B8EFC6 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 86A556472176020100B8EFC6;
 					};
 				};
@@ -256,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86A5567C217605DF00B8EFC6 /* Article.swift in Sources */,
 				86A5564E2176020100B8EFC6 /* ViewController.swift in Sources */,
 				86A5564C2176020100B8EFC6 /* AppDelegate.swift in Sources */,
+				86C9385B2176292600D1C712 /* SecondViewController.swift in Sources */,
+				86A5567A2176045400B8EFC6 /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +454,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jv.Bojan-news-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -457,7 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jv.Bojan-news-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -477,7 +492,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jv.Bojan-news-appTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bojan-news app.app/Bojan-news app";
 			};
@@ -498,7 +513,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jv.Bojan-news-appTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bojan-news app.app/Bojan-news app";
 			};
@@ -518,7 +533,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jv.Bojan-news-appUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Bojan-news app";
 			};
@@ -538,7 +553,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jv.Bojan-news-appUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Bojan-news app";
 			};
